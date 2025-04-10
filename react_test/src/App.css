@@ -1,0 +1,278 @@
+
+.movie-detail-container {
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  margin: 40px auto;
+  max-width: 950px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.movie-detail-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.movie-info span {
+  background-color: #e8e8e8;
+  padding: 10px 18px;
+  border-radius: 22px;
+  font-size: 1em;
+  color: #555;
+}
+
+.genres {
+  color: #777;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+
+.movie-overview {
+  margin-bottom: 35px;
+}
+
+.overview-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 18px;
+}
+
+.overview-text {
+  line-height: 2;
+  color: #444;
+}
+
+.movie-cast {
+  margin-bottom: 35px;
+}
+
+.cast-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 22px;
+}
+
+.cast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.cast-item {
+  text-align: center;
+}
+
+.actor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.actor-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.character-name {
+  font-size: 1em;
+  color: #666;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.3em;
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .movie-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav form {
+  display: flex;
+}
+
+nav input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+nav button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+  padding: 0 10px;
+}
+
+.movie-card p {
+  margin: 0 0 10px;
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+
+.movie-detail {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.movie-detail h2 {
+  margin-bottom: 10px;
+}
+
+.movie-detail h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.movie-detail p {
+  margin-bottom: 10px;
+}
+
+.cast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.cast-item {
+  text-align: center;
+}
+
+.cast-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  padding: 8px 12px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-container button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pagination-container span {
+    margin: 0 10px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
